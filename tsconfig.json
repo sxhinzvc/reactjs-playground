@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+      "outDir": "./dist/",
+      "jsx": "react",
+      "allowJs": true,
+      "target": "ES6"
+  }
+}
