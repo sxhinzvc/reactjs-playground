@@ -5,10 +5,10 @@ import { Button } from "./components/FunctionalComponent";
 import Element from "./components/test";
 
 ReactDOM.render(
-  <React.Fragment>
+  <>
     <FormContainer/>
     <Button/>
     Element
-  </React.Fragment>,
+  </>,
   document.getElementById('root')
 );
