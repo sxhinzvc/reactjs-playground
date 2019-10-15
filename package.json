@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot --inline --open 'Google Chrome' --verbose=true"
+    "start": "webpack-dev-server --mode development --hot --verbose=true",
+    "build": "rm -rf dist && webpack --mode development"
   },
   "repository": {
     "type": "git",
