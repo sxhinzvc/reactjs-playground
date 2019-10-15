@@ -4,12 +4,14 @@ import Button from "./Button";
 import CounterDisplay from "./CounterDisplay";
 
 export default function App() {
-  const [counter, setCounter] = React.useState(16);
-  const incrementCounter = () => setCounter(counter+1);
+  const [counter, setCounter] = React.useState(0);
+  const incrementCounter = (incrementValue) => setCounter(counter+incrementValue);
 
   return (
     <div>
-      <Button handle={incrementCounter}/>
+      <Button handle={incrementCounter} increment={1} />
+      <Button handle={incrementCounter} increment={5} />
+      <Button handle={incrementCounter} increment={10} />
       <CounterDisplay value={counter}/> 
     </div>
   );
