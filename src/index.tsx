@@ -4,6 +4,4 @@ import FormContainer from "./components/FormContainer";
 import { Button } from "./components/FunctionalComponent";
 import Element from "./components/test";
 
-ReactDOM.render(<Button />, document.getElementById('button'));
-ReactDOM.render(<FormContainer/>, document.getElementById("root"));
-ReactDOM.render(Element, document.getElementById('test'));
+ReactDOM.render([<FormContainer/>, <Button/>, Element], document.getElementById('root'));
