@@ -1,14 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import FormContainer from "./components/FormContainer";
-import { Button } from "./components/FunctionalComponent";
-import Element from "./components/test";
+import App from "./components/App";
 
 ReactDOM.render(
-  <>
-    <FormContainer/>
-    <Button/>
-    Element
-  </>,
+  <App/>,
   document.getElementById('root')
 );
